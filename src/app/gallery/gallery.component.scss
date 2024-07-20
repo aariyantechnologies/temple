@@ -1,0 +1,31 @@
+@import 'https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lightgallery.css';
+@import 'https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lg-zoom.css';
+
+.gallery-item{
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    img{
+        width: 235px;
+        height: 200px;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+}
+.bgAlbum{
+    cursor: pointer;
+    border-radius: 10px;
+    background: rgb(255, 252, 2);
+    background: linear-gradient(0deg, rgb(255 228 2) 0%, rgb(253, 196, 45) 100%);
+    padding: 5px;
+    transition: all ease-in-out 0.3s;
+    &:hover{
+        box-shadow: 0px 0px 8px #333333;
+    }
+    img{
+        height: 100px;
+        object-fit: cover;
+        transform: rotate(-6deg);
+    }
+}
+

@@ -1,0 +1,314 @@
+<header>
+  <div class="container-1280 pt-2 pb-2 position-relative">
+  <div class="clearfix">
+    <div class="d-flex position-relative" routerLink="">
+      <img src="../assets/ram_logo.png" class="logo" alt="logo"/>
+      <div class="logoTitle">
+        <strong class="kanndaTitle">ಶ್ರೀ ದಕ್ಷಿಣ ಅಯೋಧ್ಯೆ ಕೋದಂಡರಾಮ ದೇವಸ್ಥಾನ</strong>
+        <strong class="englishTitle">Sri Dakshina Ayodhya Kodandarama Temple</strong>
+      </div>
+    </div>
+    <div class="statueOne">
+      <img src="../assets/ramstatue.png" alt="Hanuman" />
+    </div>
+    <div class="float-right">
+      
+      <ul class="list-inline mb-1 signInLinks">
+        <li>
+          <a href="javascript: void(0);" class="donate" (click)="donateModal.show()"><i class="fa fa-heart" aria-hidden="true"></i>&nbsp;&nbsp;DONATE</a>
+        </li>
+        <li class="list-inline-item d-none">
+          <a href="javascript: void(0);">Login</a>
+        </li>
+        <li class="list-inline-item d-none">|</li>
+        <li class="list-inline-item d-none">
+          <a href="javascript: void(0);">Registration</a>
+        </li>
+        </ul>
+    </div>
+  </div>
+</div>
+<nav>
+  <div class="menuText" (click)="menuText=!menuText" [ngClass]="menuText ? 'menuOpened' : 'menuClosed'">
+    <div class="clearfix">
+      <div class="float-left">Menu</div>  
+      <div class="float-right"><i class="fa" [ngClass]="menuText ? 'fa-times' : 'fa-bars'" aria-hidden="true"></i></div>
+    </div>
+  </div>
+  <div class="container-1280">
+    
+    <ul class="list-inline m-0" [ngClass]="menuText ? 'menuOpened' : 'menuClosed'">
+      <li class="list-inline-item">
+        <a routerLink="/home" routerLinkActive="active" (click)="scrollTo()">Home</a>
+      </li>
+      <li class="list-inline-item">
+        <a routerLink="/about" routerLinkActive="active" (click)="scrollTo()">About</a>
+      </li>
+      <li class="list-inline-item">
+        <a routerLink="/sevas" routerLinkActive="active" (click)="scrollTo()">Sevas</a>
+      </li>
+      <li class="list-inline-item">
+        <a routerLink="/events" routerLinkActive="active" (click)="scrollTo()">Events</a>
+      </li>
+      <li class="list-inline-item">
+        <a routerLink="/gallery" routerLinkActive="active" (click)="scrollTo()">Gallery</a>
+      </li>
+      <li class="list-inline-item">
+        <a routerLink="/contact" routerLinkActive="active" (click)="scrollTo()">Contact Us</a>
+      </li>
+      <li class="list-inline-item ml-5">
+        <a href="javascript: void(0);" class="donate mobDonate" (click)="donateModal.show()"><i class="fa fa-heart" aria-hidden="true"></i>&nbsp;&nbsp;DONATE</a>
+      </li>
+    </ul>
+  </div>
+  </nav>
+</header>
+<div id="scrollTop"><span class="d-none">Scroll</span></div>
+
+
+    <router-outlet></router-outlet>
+
+
+<footer>
+  <div class="container-1280">
+    <div class="row m-0">
+      
+      <div class="col-12 col-md-3">
+        <h6 class="mb-4">About Us</h6>
+        <p class="text-justify">
+          Our journey dates back to the glorious and culturally rich Vijayanagara-Nayak period, somewhere between 1500 AD - 1600 AD, as indicated by the Archaeological Survey Department report. It was during this time that a valiant fight unfolded in Ayodhya, coinciding with the period when Babar demolished the Ram Mandir and built a mosque in the same place.
+        </p>
+      </div>
+      <div class="col-12 col-md-1">
+        <h6 class="mb-4">Explore</h6>
+        <ul class="list-inline m-0">
+          <li>
+            <a routerLink="/home" routerLinkActive="active" (click)="scrollTo()">- Home</a>
+          </li>
+          <li>
+            <a routerLink="/about" routerLinkActive="active" (click)="scrollTo()">- About</a>
+          </li>
+          <li>
+            <a routerLink="/sevas" routerLinkActive="active" (click)="scrollTo()">- Sevas</a>
+          </li>
+          <li>
+            <a routerLink="/events" routerLinkActive="active" (click)="scrollTo()">- Events</a>
+          </li>
+          <li>
+            <a routerLink="/gallery" routerLinkActive="active" (click)="scrollTo()">- Gallery</a>
+          </li>
+          <li>
+            <a routerLink="/contact" routerLinkActive="active" (click)="scrollTo()">- Contact Us</a>
+          </li>
+ 
+        </ul>
+      </div>
+      <div class="col-12 col-md text-center d-none d-md-block">
+        <img src="../assets/ramstatue.png" class="w-75" alt="footer logo"/>
+      </div>
+      <div class="col-12 col-md">
+        <h6 class="mb-4">Temple Timings</h6>
+        
+        <ul class="list-inline m-0">
+          <li>
+            <strong class="mb-2">Monday - Sunday</strong>
+           <p class="mb-0">Morning Hours - 7:15AM to 12:15PM</p> 
+           <p>Evening Hours - 5:30PM to 8:00PM</p> 
+          </li>
+          <li>
+            <strong>Thursady & Saturday</strong>
+            <p class="mb-0">Morning Hours - 7:15AM to 1:00PM</p> 
+            <p>Evening Hours - 5:30 to 8:30PM</p> 
+          </li>
+          <li>
+            <strong>Maha Mangala Arthi Everday  </strong>
+            <p class="mb-0">Morning Hours - 8:30AM to 9:00PM</p> 
+            
+          </li>
+
+        </ul>
+      </div>
+      <div class="col-12 col-md">
+        <h6 class="mb-4">Contact</h6>
+        <div class="footer-info">
+       
+          <strong>Sri Dakshina Ayodhya Kodandarama Temple</strong>       
+          <p>          
+            1st block, kacharakanahalli,<br>
+             Thanisandra Main Rd, Venkateshpura, <br>
+             1st Stage, HBR Layout,<br> 
+             Bengaluru, Karnataka 560043<br>
+            <strong>Phone:</strong> +91 9999999999<br>
+            <strong>Email:</strong> <br> <a href="mailto:enquiry@dakshinaayodhyatemple.com">enquiry@dakshinaayodhyatemple.com</a><br>
+          </p>
+          <div class="social-links mt-3">
+        
+        
+        <ul class="list-inline m-0">
+          <li class="list-inline-item">
+            <a href="#" class="facebook"><i class="fa fa-facebook mr-2" aria-hidden="true"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="facebook"><i class="fa fa-twitter mr-2" aria-hidden="true"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="facebook"><i class="fa fa-instagram mr-2" aria-hidden="true"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="facebook"><i class="fa fa-linkedin mr-2" aria-hidden="true"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="facebook"><i class="fa fa-telegram mr-2" aria-hidden="true"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="instagram"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+          </li>    
+        
+        </ul>
+          </div>
+          </div>
+      </div>
+    </div>
+    <div class="clearfix mt-4">
+      <div class="float-left">
+        © 2024 All copyrights reserved by Sri Dakshina Ayodhya Kodandarama Temple.
+      </div>
+      <div class="float-right">
+        <ul class="list-inline m-0 flinks">
+          <li class="list-inline-item">
+            <a href="javascript: void(0);" (click)="termsconditionModal.show()">
+              Terms & Conditions
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="javascript: void(0);">
+              |
+            </a>
+          </li>    
+          <li class="list-inline-item">
+            <a href="javascript: void(0);" (click)="policyModal.show()">
+              Privacy Policy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<button class="btn floatingBtn" *ngIf="isShowTop" (click)="scrollTo()"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+<div class="modal fade" bsModal #donateModal="bs-modal" [config]="{backdrop: 'static'}" tabindex="-1" role="dialog" aria-labelledby="dialog-nested-name1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="dialog-nested-name1" class="modal-title pull-left">Donation for Temple Trust</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="donateModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-center"><strong>:: ಜೈ ಶ್ರೀ ರಾಮ್ || Jai Sri Ram ::</strong></p>
+        <p class="text-center mb-5">
+          Devotees can donate to <strong>Sri Dakshina Ayodhya Kodandarama Temple</strong> via online or offline payments. Every donation will be used for the holy cause in the temple and for the development of amenities to the devotees who visit the temple for offering their prayers to Sri Ram. For payments Please scan the QR CODE or use the number +91 9999999999. Devotees will get the reciept once payment completed through Whatsapp.  
+        </p>
+        <div class="row">
+          <div class="col-12 col-md-6 text-center">
+            <div class="payBg">
+            <div class="payIcons mt-4">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <img src="./assets/icons/pay1.png" alt="phonepe"/>
+                </li>
+                <li class="list-inline-item">
+                  <img src="./assets/icons/pay2.png" alt="GooglePay"/>
+                </li>
+                <li class="list-inline-item">
+                  <img src="./assets/icons/pay3.png" alt="CRED"/>
+                </li>
+              </ul>
+            </div>
+            <div class="payIcons">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <img src="./assets/icons/pay6.png"  alt="PayTM"/>
+                </li>
+                <li class="list-inline-item">
+                  <img src="./assets/icons/pay5.png" alt="AmazonPay"/>
+                </li>
+             
+              </ul>
+            </div>
+            <div class="payIcons mb-4">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <img src="./assets/icons/pay4.png" alt="Whatsapp"/>
+                </li>
+
+             
+              </ul>
+            </div>
+          </div>
+          </div>
+          <div class="col-12 col-md-6 text-center">
+            <div class="position-relative">
+              <img src="./assets/icons/mobile.png" alt="mobile"/>
+              <img src="./assets/icons/bhim-upi-icon.png" alt="mobile" class="bhimUpi"/>
+              <img src="./assets/icons/qr-code-icon.png" alt="mobile" class="qrCode"/>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5 mb-4">
+          <button type="button" class="btn btn-warning btnLight" (click)="donateModal.hide()">Click to Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" bsModal #termsconditionModal="bs-modal" [config]="{backdrop: 'static'}" tabindex="-1" role="dialog" aria-labelledby="dialog-nested-name1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="dialog-nested-name1" class="modal-title pull-left">Terms and Conditions</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="termsconditionModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-center"><strong>:: ಜೈ ಶ್ರೀ ರಾಮ್ || Jai Sri Ram ::</strong></p>
+        <p class="text-center mb-5">
+          No Payment refund
+        </p>
+       
+        <div class="text-center mt-5 mb-4">
+          <button type="button" class="btn btn-warning btnLight" (click)="termsconditionModal.hide()">Click to Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" bsModal #policyModal="bs-modal" [config]="{backdrop: 'static'}" tabindex="-1" role="dialog" aria-labelledby="dialog-nested-name1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="dialog-nested-name1" class="modal-title pull-left">Privacy Policy</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="policyModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-center"><strong>:: ಜೈ ಶ್ರೀ ರಾಮ್ || Jai Sri Ram ::</strong></p>
+        <p class="text-center mb-5">
+          Our Policy
+        </p>
+       
+        <div class="text-center mt-5 mb-4">
+          <button type="button" class="btn btn-warning btnLight" (click)="policyModal.hide()">Click to Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
